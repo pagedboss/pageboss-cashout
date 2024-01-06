@@ -1,0 +1,1816 @@
+#restoreAppContainer {
+  margin-top: 100px;
+  min-height: 550px;
+}
+@media (max-width: 47rem) {
+  #restoreAppContainer {
+    margin-top: 30px;
+    min-height: 300px;
+  }
+}
+.dashboard-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  opacity: .6;
+  top: 0px;
+}
+.dashboard-spinner .loading-spinner {
+  width: 6rem;
+  height: 6rem;
+}
+.restore_body_container {
+  background: #f5f7fa;
+}
+.vx_foreground-container {
+  z-index: auto;
+}
+.vx_globalFooter {
+  position: relative;
+  margin-top: 0;
+  top: unset;
+  min-height: auto;
+}
+.hideContextualHelp .help-component {
+  display: none;
+}
+.sheet_wrapper_dashboard {
+  z-index: 1052 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  font-family: "PayPalSansBig-Medium", Helvetica Neue, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #0070ba;
+  text-decoration: none;
+}
+.body-text1 {
+  color: #2c2e2f;
+  margin-bottom: 20px;
+}
+/* classes with standard font styles and colors.  to be used if not using pp react components - start */
+.body-color1 {
+  color: #2c2e2f;
+}
+.body-text2 {
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #2c2e2f;
+}
+.body-text3 {
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #2c2e2f;
+  font-family: "PayPalSansBig-Medium", Helvetica Neue, Arial, sans-serif;
+}
+.caption-text1 {
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #2c2e2f;
+}
+.caption-text2 {
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #2c2e2f;
+  font-family: "PayPalSansBig-Medium", Helvetica Neue, Arial, sans-serif;
+}
+/* classes with standard font styles and colors.  to be used if not using pp react components - end */
+.link-ext-icon::before {
+  content: "";
+  background-image: url(assets/icon_external_link.png);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: cover;
+  background-position: 0;
+  vertical-align: middle;
+}
+.align-middle {
+  vertical-align: middle;
+}
+.slide-left {
+  position: relative;
+  animation-name: slideLeft;
+  animation-duration: .2s;
+}
+.slide-right {
+  position: relative;
+  animation-name: slideRight;
+  animation-duration: .2s;
+}
+@keyframes slideLeft {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes slideRight {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+.react_migrated_modal_wrapper {
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .react_migrated_modal_wrapper {
+    max-height: 100vh !important;
+    height: 100vh !important;
+    border-radius: 0px !important;
+  }
+}
+.react_migrated_modal_wrapper .ppLogo-component {
+  margin-top: 10px;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+}
+.react_migrated_modal_wrapper .react_migrated_modal {
+  position: static;
+}
+.react_migrated_modal_wrapper .react_migrated_modal .modal-component-content {
+  padding: 30px 0px 50px;
+}
+.react_migrated_modal_wrapper .react_migrated_modal h2 {
+  color: #2c2e2f;
+  margin-bottom: 20px;
+}
+.dashboard-component {
+  margin-bottom: 100px;
+}
+@media (max-width: 64rem) {
+  .dashboard-component {
+    padding: 0 .25rem !important;
+    margin-bottom: 30px;
+  }
+}
+.dashboard-component .left-panel {
+  background: #ffffff;
+}
+.dashboard-component .right-panel {
+  padding: 20px 35px 40px;
+  background: #ffffff;
+  margin: 0 20px;
+}
+@media (max-width: 64rem) {
+  .dashboard-component .right-panel {
+    padding: 20px 20px 40px;
+    margin: 0px;
+  }
+}
+.dashboard-component .dashboard-make-payment {
+  font-size: 1.1rem;
+}
+.dashboard-component .dashboard-make-payment-ul {
+  padding-left: 50px;
+}
+.accountImpact-component {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 47rem) {
+  .accountImpact-component.mobile {
+    padding: 20px 0;
+  }
+}
+.accountImpact-component .heading {
+  margin-bottom: 30px;
+}
+.accountImpact-component .actions {
+  margin-bottom: 20px;
+  margin-left: -8px;
+}
+.accountImpact-component .action-status {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+.accountImpact-component .action-status .content {
+  margin-left: 5px;
+}
+.accountImpact-component .action-status span {
+  align-self: center;
+}
+.accountImpact-component .mobile-view .viewAllActions {
+  text-align: center;
+}
+.actionImpactIcon-component.clearIcon {
+  color: #d9360b;
+}
+.actionImpactIcon-component.checkIcon {
+  color: #299976;
+}
+.actionModal-component {
+  margin-bottom: 80px;
+}
+.actionModal-component h2 {
+  margin-bottom: 30px;
+  color: #2c2e2f;
+}
+.actionModal-component .actions-list-header {
+  background-color: #f7f9fa;
+  padding: 10px 0;
+}
+.actionModal-component .actions-list {
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.actionModal-component .action-row {
+  margin: 5px 0;
+}
+.actionModal-component .action-col-status {
+  text-align: center;
+}
+.actionModal-component .actions-divider {
+  margin: 0;
+}
+.actionModal-component .actionModal-footer .close-button {
+  display: block;
+  margin: 0 auto 50px;
+}
+.actionModal-component .ppLogo-component {
+  position: relative;
+  z-index: 1;
+}
+.limitationDetails-component h1 {
+  margin-bottom: 20px;
+}
+.limitationDetails-component .select-limitation {
+  background-color: #f5f7fa;
+  padding: 25px 30px;
+  margin: 25px 0;
+}
+.limitationDetails-component button[class$="get-help"] {
+  float: right;
+}
+.limitationDetails-component .reviewBanner {
+  margin: 30px 0;
+}
+.limitationDetails-component .limitation-esc-date {
+  font-family: "PayPalSansBig-Medium", Helvetica Neue, Arial, sans-serif;
+}
+.limitationDetails-component .reasons b {
+  font-weight: 500;
+}
+.limitationMenuListItem [class*="secondary-text"] {
+  max-width: 420px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media (max-width: 47rem) {
+  .limitationMenuListItem [class*="secondary-text"] {
+    max-width: 250px;
+  }
+}
+.limitationMenuListItem b {
+  font-weight: 500;
+}
+#limitationsDropDownMenu button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.appeals-component {
+  margin: 30px 0;
+}
+.appeals-component .appealStep-component {
+  margin-top: 12px;
+}
+.feedback-component span {
+  vertical-align: middle;
+}
+.feedback-component .content {
+  padding-left: 5px;
+}
+.confirmIdentityError-component {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  margin: auto;
+}
+.confirmIdentityError-component .critical-icon {
+  color: #d9360b;
+  font-size: 7.25rem;
+}
+.confirmIdentityError-component .continue-button {
+  margin-top: 60px;
+}
+.confirmIdentityError-component .confirmIdentityError-footer {
+  margin: 45px auto;
+}
+.confirmIdentityError-component .confirmIdentityError-footer .ppLogo-component {
+  top: auto;
+}
+.loading-spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #005ea6;
+  position: relative;
+  -webkit-animation: border-spinner 1s linear infinite;
+  animation: border-spinner 1s linear infinite;
+}
+.loading-spinner:before,
+.loading-spinner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 100% 50%;
+  border-bottom-left-radius: 100% 50%;
+  border: 0.125rem solid currentColor;
+  border-right-width: 0;
+}
+.loading-spinner:after {
+  transform-origin: center right;
+  transform: rotate(-90deg);
+}
+@-webkit-keyframes border-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes border-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.lineText-component {
+  text-align: center;
+  border-bottom: 1px solid #cbd2d6;
+  width: 100%;
+  line-height: 0;
+}
+.lineText-component span {
+  color: #6c7378;
+  background-color: #f5f7fa;
+  padding: 0 10px;
+  line-height: 0;
+  vertical-align: bottom;
+}
+.ppLogo-component {
+  width: 100%;
+}
+.ppLogo-component img {
+  margin: auto;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.modalActions-component {
+  margin-top: 50px;
+  text-align: center;
+}
+.modalActions-component button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.modalSpinner_container {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  opacity: .7;
+}
+.modalSpinner_container .spinner {
+  margin: auto;
+  top: 48%;
+  position: relative;
+}
+.proofIdModal-Migrated .header_style {
+  text-align: left;
+  color: #2c2e2f;
+}
+.proofIdModal-Migrated .body_style {
+  text-align: left;
+  color: #2c2e2f;
+  margin-bottom: 20px;
+}
+.proofIdModal-Migrated .ul_style {
+  margin-left: 16px;
+}
+.proofIdModal-Migrated .ul_style .list_element_style {
+  list-style: disc;
+  text-align: left;
+  color: #6c7378;
+}
+.proofIdModal-Migrated .ul_style .list_element_style a {
+  font-size: 13px;
+}
+.proofIdModal-Migrated .ul_style .uguide-bulk-list-desc {
+  padding-left: 7px;
+  list-style: disc;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6;
+  text-align: left;
+  color: #2c2e2f;
+}
+.proofIdModal-Migrated .link-ext-icon::before {
+  content: "";
+  background-image: url(assets/icon_external_link.png);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: cover;
+  background-position: 0;
+  vertical-align: middle;
+}
+.proofIdModal-Migrated .uguide-steps .uguide-steps-list {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.proofIdModal-Migrated .uguide-steps .uguide-steps-list .uguide-steps-header {
+  font-size: 15px;
+  font-weight: 500;
+}
+.proofIdModal-Migrated .check_Div {
+  margin-top: 20px;
+}
+.proofIdModal-Migrated .document-link-area {
+  margin-top: 37px;
+  margin-bottom: 0;
+}
+.proofIdModal-Migrated .document-link-area .linkToDocumentHeadText {
+  padding-top: 35px;
+  padding-bottom: 15px;
+  text-align: left;
+  color: #2c2e2f;
+}
+.proofIdModal-Migrated .transactionDetails {
+  margin: 25px 0;
+  font-size: 15px;
+  padding: 0px;
+}
+.proofIdModal-Migrated .transactionDetails .tnxHeader {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.proofIdModal-Migrated #selectDocType {
+  margin-top: 30px;
+}
+.proofIdModal-Migrated .notes-area {
+  margin-bottom: 20px;
+}
+.proofIdModal-Migrated .notesLabel {
+  color: #2c2e2f;
+  margin-bottom: 5px;
+}
+.proofIdModal-Migrated .pi-submit {
+  width: 100%;
+  margin: 30px 0px 20px;
+}
+.proofIdModal-Migrated .cancel-link {
+  text-align: center;
+}
+.appeal-step-migrated-wrapper {
+  background-color: white;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated {
+  background-color: #f5f7fa;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .details {
+  max-width: 1000px;
+  padding: 0 24px;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .header {
+  align-self: center;
+  color: #2c2e2f;
+  line-height: 18px;
+  font-weight: 300;
+  text-transform: none;
+  font-family: 'PayPal-Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action {
+  align-self: center;
+  padding-left: 10px;
+}
+@media (max-width: 400) {
+  .appeal-step-migrated-wrapper .appealstep-migrated .action {
+    padding-left: 5px;
+  }
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action button,
+.appeal-step-migrated-wrapper .appealstep-migrated .action a {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  background-color: #0070ba;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action button:focus,
+.appeal-step-migrated-wrapper .appealstep-migrated .action a:focus,
+.appeal-step-migrated-wrapper .appealstep-migrated .action button:hover,
+.appeal-step-migrated-wrapper .appealstep-migrated .action a:hover {
+  background-color: #003087;
+  border-color: #003087;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action a:focus,
+.appeal-step-migrated-wrapper .appealstep-migrated .action a:hover {
+  color: #fff;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action .appealStep-status {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: none;
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+  text-align: right;
+  white-space: nowrap;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action .appealStep-status span {
+  vertical-align: middle;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action .appealStep-status.completed {
+  color: #299976;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action .appealStep-status.completed .icon {
+  color: #299976;
+}
+.appeal-step-migrated-wrapper .appealstep-migrated .action .appealStep-status .content {
+  margin-right: 5px;
+}
+@media (max-width: 752px) {
+  .appeal-step-migrated-wrapper .appealstep-migrated .action .appealStep-status .content {
+    margin-right: 0px;
+    margin-left: -8px;
+  }
+}
+.appeal-step-migrated-wrapper .submitMoreDocs {
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.appeal-step-migrated-wrapper .submitMoreDocs a {
+  font-size: 13px;
+}
+.appeal-step-migrated-wrapper .details {
+  box-sizing: border-box;
+}
+.appeal-step-migrated-wrapper .lineText-component {
+  margin: 0 24px;
+  width: auto;
+}
+.appeal-step-migrated-wrapper .lineText-component span {
+  color: #2c2e2f;
+}
+.sheetAppealContainer {
+  box-sizing: border-box;
+}
+.appealstep-wrapper .appeal-step-migrated-wrapper > div:first-child .lineText-component {
+  position: relative;
+  top: 5px;
+}
+.errorList-component {
+  margin-top: 5%;
+}
+.errorList-component .nonAlert-container {
+  color: #d20102;
+}
+.errorList-component .nonAlert-container p {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  text-align: left;
+  color: #d20000;
+  padding: 0px;
+  margin: 18px 0px 0px 0px;
+  background: none;
+  border: none;
+  position: relative;
+}
+.errorList-component .nonAlert-container .alert-red {
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.errorList-component .nonAlert-container .align-middle {
+  vertical-align: middle;
+  font-size: 13px;
+}
+.confirmSubmissionModal-Migrated .confirmSubmission_text-1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #2c2e2f;
+}
+.confirmSubmissionModal-Migrated .confirmSubmission_text-para {
+  margin: 30px 0px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: center;
+  color: #2c2e2f;
+}
+.confirmSubmissionModal-Migrated .confirm-leave {
+  margin-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.confirmSubmissionModal-Migrated .done-btn-leave,
+.confirmSubmissionModal-Migrated .done-btn-back {
+  text-align: center;
+}
+.confirmSubmissionModal-Migrated .done-btn-back {
+  margin-top: 25px;
+}
+.error-component {
+  margin: 0 20px 30px 20px;
+}
+.error-component .error-message {
+  color: #c72e2e;
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+}
+.error-component .error-message span {
+  vertical-align: middle;
+  align-self: center;
+  display: inline-block;
+  max-width: 100%;
+}
+.error-component .error-message .content {
+  padding-left: 10px;
+}
+.uploadComponent-migrated {
+  margin: 35px 0 40px;
+  width: auto;
+}
+.uploadComponent-migrated .hideInput {
+  display: none;
+}
+.uploadComponent-migrated .dragAndDrop-container {
+  border: 1px dashed #9da3a6;
+  height: 150px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+}
+.uploadComponent-migrated .dragAndDrop-container.redBorder {
+  border: 1px dashed #d20000;
+}
+.uploadComponent-migrated .dragAndDrop-container.dragOver {
+  background-color: #f7f9fa;
+}
+.uploadComponent-migrated .dragAndDrop-container .drag-drop-text {
+  color: #6c7378;
+  margin-top: 10px;
+}
+.uploadComponent-migrated .dragAndDrop-container .cloud_icon {
+  background: url("https://www.paypalobjects.com/digitalassets/c/website/ua/img/PP-upload-sprite-2x.png") no-repeat;
+  background-size: 59px 600px;
+  height: 38px;
+  margin: auto;
+  width: 70px;
+}
+.uploadComponent-migrated .browse-container {
+  margin: 10px 0 30px;
+}
+.uploadComponent-migrated .browse-container .file-format {
+  float: right;
+  color: #6c7378;
+  line-height: 1.5rem;
+}
+.uploadComponent-migrated .mobile-view {
+  margin: 15px 0 0;
+}
+.uploadComponent-migrated .mobile-view a {
+  display: block;
+  height: 60px;
+  border: 1px dashed #9da3a6;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 18px;
+}
+.uploadComponent-migrated .mobile-view a .cloud_mobile_icon {
+  display: inline-block;
+  background: url(https://www.paypalobjects.com/digitalassets/c/website/ua/img/PP-upload-sprite-2x.png) no-repeat;
+  background-size: 27px 266px;
+  background-position: 0px -36px;
+  width: auto;
+  padding-left: 36px;
+}
+.uploadComponent-migrated .mobile-view .file-format {
+  padding-top: 15px;
+  display: block;
+}
+.uploadComponent-migrated .displayFiles {
+  margin-top: 25px;
+}
+.uploadComponent-migrated .fileView {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.uploadComponent-migrated .fileView span {
+  vertical-align: middle;
+  display: inline-block;
+}
+.uploadComponent-migrated .fileView .details {
+  padding-bottom: 5px;
+}
+.uploadComponent-migrated .fileView .thumbnail-file {
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.uploadComponent-migrated .fileView .trashIcon {
+  float: right;
+  margin-top: 4px;
+  cursor: pointer;
+}
+.submissionInfoModal-migrated {
+  text-align: center;
+}
+.submissionInfoModal-migrated .success_icon {
+  margin-bottom: 10px;
+}
+.submissionInfoModal-migrated .success_icon span {
+  font-size: 9rem;
+  color: #00CF92;
+}
+.submissionInfoModal-migrated .submission-info-vx_text-1 {
+  color: #2c2e2f;
+  text-align: center;
+  padding: 5px 0px;
+}
+.submissionInfoModal-migrated .go-to-button {
+  margin-top: 20px;
+  width: 100%;
+}
+.reimburseChargebackModal-Migrated .reimburseChargeback-content {
+  margin-top: 30px;
+}
+.reimburseChargebackModal-Migrated .reimburseChargeback-content .desc-reimburse {
+  margin-bottom: 20px;
+}
+.reimburseChargebackModal-Migrated .reimburseChargeback-content .steps-reimburse-ul {
+  padding-left: 25px;
+  padding-bottom: 11px;
+}
+.reimburseChargebackModal-Migrated .reimburseChargeback-content .steps-reimburse-ul .steps-reimburse-li {
+  list-style-type: decimal;
+  padding-left: 5px;
+  color: #2c2e2f;
+  text-align: left;
+}
+.reimburseChargebackModal-Migrated .reimburseChargeback-content .address-reimburse-ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.reimburseChargebackModal-Migrated .reimburseChargeback-content .address-reimburse-ul .address-reimburse-li#address-bold {
+  padding-left: 35px;
+}
+.reimburseChargebackModal-Migrated .reimburseChargeback-content .address-reimburse-ul .address-reimburse-li {
+  padding-left: 35px;
+  color: #2c2e2f;
+  text-align: left;
+}
+.customerComplaintsModal-Migrated .body-text1 {
+  padding-bottom: 30px;
+}
+.customerComplaintsModal-Migrated .resolution-center {
+  width: 100%;
+}
+.supplierInfoclass .supplier-form {
+  margin-top: 25px;
+}
+.supplierInfoclass .supplier-form .margin-header {
+  margin-top: 20px;
+}
+.supplierInfoclass .supplier-form .marginBodyText {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.supplierInfoclass .supplier-form .supplierInfo_span {
+  padding: 0;
+  margin: 30px 0 15px;
+  font-size: 15px;
+  line-height: 40px;
+  color: #2c2e2f;
+  font-weight: bold;
+}
+.supplierInfoclass .supplier-form .phoneNo {
+  padding-bottom: 22px;
+}
+.supplierInfoclass .supplier-form .businessName {
+  margin: 10px 3px 21px 3px;
+}
+.supplierInfoclass .supplier-form .phoneNo {
+  padding: 0px 4px 22px 4px;
+}
+.supplierInfoclass .supplier-form .emailAddr {
+  padding: 0px 4px 22px 4px;
+}
+.supplierInfoclass .supplier-form .url {
+  padding: 0px 4px 22px 4px;
+}
+.supplierInfoclass .supplier-form .country {
+  margin: 0px 4px 23px 4px;
+}
+.supplierInfoclass .supplier-form .input-address {
+  margin: 0px 4px 0px 4px;
+}
+.supplierInfoclass .supplier-form .check_span_address {
+  padding: 0;
+  margin: 30px 0 15px;
+  font-size: 15px;
+  line-height: 21px;
+  color: #2c2e2f;
+  font-weight: bold;
+}
+.supplierInfoclass .supplier-form .modalActions-component {
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 20%;
+}
+.reviewLegalOrdersModal-Migrated .content_data {
+  text-align: left;
+  padding-left: 0px;
+  line-height: 1.5rem;
+}
+.reviewLegalOrdersModal-Migrated .row-style {
+  padding-top: 10px;
+  text-align: left;
+}
+/* Styling for React Modal */
+.confirmBankModal-Migrated .uploadComponent-migrated {
+  margin: 15px 0;
+}
+.confirmBankModal-Migrated .modalActions-component {
+  padding-top: 50px;
+  margin-top: 0px;
+}
+.confirmBankModal-Migrated .confirmBank-content .confirmBank-dropselect {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.confirmBankModal-Migrated .confirmBank-content .confirmBank-dropselectUpload {
+  margin-bottom: 0px;
+}
+.confirmBankModal-Migrated .confirmBank-content .alternateAppeal-link {
+  margin-top: 20px;
+  text-align: center;
+}
+.resolveIssuesEbay-migrated .additionalComments {
+  margin-top: 15px;
+}
+.resolveIssuesEbay-migrated .customerServiceContactForm {
+  padding-top: 10px;
+}
+.resolveIssuesEbay-migrated .customerServiceContactForm .marginBodyText {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.pciAcknowledgement-Migrated .pciAcknowledgement-body-text {
+  padding-top: 30px;
+  margin-bottom: 24px;
+}
+.pciAcknowledgement-Migrated .pciAcknowledgement-InputLabel {
+  color: #6c7378;
+  padding-top: 7px;
+}
+.pciAcknowledgement-Migrated .typeIAgreeInput {
+  margin-top: 20px;
+}
+/* Styling for React Modal */
+.enablingLegislationModal-Migrated .documentUrlInput {
+  margin-top: 30px;
+}
+.enablingLegislationModal-Migrated .modalActions-component {
+  margin-top: 30px;
+}
+/* Styling for React Modal */
+.removeAUPViolatingItemsModal-Migrated .removeAUPViolatingItemsForm {
+  margin-top: 30px;
+}
+.removeAUPViolatingItemsModal-Migrated .form-templateAddWebsite {
+  padding-bottom: 20px;
+}
+.removeAUPViolatingItemsModal-Migrated .addAnotherWebsite {
+  margin-left: -6px;
+}
+.removeAUPViolatingItemsModal-Migrated .removeAUPViolatingItemsFormMigrated__websiteCategoryTxnId {
+  padding-top: 5px;
+}
+.removeAUPViolatingItemsModal-Migrated .auxDataDisplay {
+  padding-left: 0px;
+}
+.removeAUPViolatingItemsModal-Migrated .removeAUPViolatingItemsRadioButton {
+  padding-top: 21px;
+  margin-top: 10px;
+}
+.removeAUPViolatingItemsModal-Migrated .removeAUPViolatingItemsRadioButton legend {
+  border: none;
+}
+.textInputCounter-component .downCounterError {
+  color: #d20000;
+}
+.textInputCounter-component .downCounter {
+  text-align: right;
+  padding: 10px 0px;
+}
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .politicallyExposedPeople-content-head .peopleInclude {
+  padding-top: 21px;
+}
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .politicallyExposedPeople-content-head .criteria-list {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 11px;
+}
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .politicallyExposedPeople-content-head .criteria-list .political-criteria-list {
+  list-style: disc;
+  color: #6c7378;
+}
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .finishForm,
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .pleaseAnswer,
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .publicTrust,
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .associatedWith {
+  margin-bottom: 20px;
+}
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .politically-exposed-method-radio legend {
+  display: none;
+}
+.politicallyExposedPeople-Migrated .politicallyExposedPeople-content .notes-area {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.alcoholAddendum-Migrated .Alcohol_bodytxt {
+  padding: 30px 0px 24px;
+}
+.alcoholAddendum-Migrated .body-text {
+  color: #6c7378;
+}
+.alcoholAddendum-Migrated .body-text ul {
+  list-style: disc;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #6c7378;
+}
+.alcoholAddendum-Migrated .body-text p {
+  color: #6c7378;
+}
+.alcoholAddendum-Migrated .body-text .typeIAgreeInput {
+  margin-top: 20px;
+}
+.provideWebsite-Migrated .textInputCounter-component .downCounter {
+  margin-bottom: 25px;
+}
+.provideWebsite-Migrated .modal-component-content .form_element {
+  margin-top: 30px;
+}
+.provideWebsite-Migrated .modal-component-content .form_element .input-field {
+  margin-bottom: 25px;
+}
+.explainFraudReductionStepsTakenModal-Migrated .explainFraudReductionStepsTaken-form .explainFraudReductionStepsTaken-upload .body-text1 {
+  margin-top: 20px;
+}
+/* Styling for React Modal */
+.confirmCard--Migrated .modalActions-component {
+  padding-top: 50px;
+  margin-top: 0px;
+}
+.confirmCard--Migrated .confirmCard-content #header {
+  margin-bottom: 20px;
+}
+.confirmCard--Migrated .confirmCard-content .confirmCard-dropselect {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.confirmCard--Migrated .confirmCard-content .confirmCard-dropselectUpload {
+  margin-bottom: 0px;
+}
+.confirmCard--Migrated .confirmCard-content .alternateAppeal-link {
+  margin-top: 20px;
+  text-align: center;
+}
+.explainAccountActivityModal-migrated .uploadGuides {
+  margin: 25px 0 25px 10px;
+  padding-left: 10px;
+}
+.explainAccountActivityModal-migrated .uploadGuides li.body-text2 {
+  list-style: disc;
+  text-align: left;
+  color: #6c7378;
+  padding-left: 5px;
+}
+.explainAccountActivityModal-migrated .auxData-status-wrapper {
+  margin: 25px 0px;
+  border: 1px solid #e1e3e6;
+  border-radius: 5px;
+  text-align: left;
+}
+.explainAccountActivityModal-migrated .auxData-status-wrapper .status-container {
+  border-bottom: 1px solid #e1e3e6;
+}
+.explainAccountActivityModal-migrated .auxData-status-wrapper .status-container:last-child {
+  border-bottom: none;
+}
+.explainAccountActivityModal-migrated .auxData-status-wrapper div.status-item {
+  color: #0070BA;
+}
+.explainAccountActivityModal-migrated .auxData-status-wrapper .status-item {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+.explainAccountActivityModal-migrated .auxData-status-wrapper .status-item span {
+  align-self: center;
+}
+.explainAccountActivityModal-migrated .go-back {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+}
+@media (max-width: 64rem) {
+  .explainAccountActivityModal-migrated .go-back {
+    left: 24px;
+  }
+}
+@media (max-width: 47rem) {
+  .explainAccountActivityModal-migrated .go-back {
+    left: 16px;
+    top: 12px;
+  }
+}
+.explainAccountActivityModal-migrated .go-back span {
+  vertical-align: middle;
+}
+.explainAccountActivityModal-migrated .go-back span:last-child {
+  padding-left: 5px;
+}
+.explainAccountActivityModal-migrated #questionnare {
+  margin: 25px 0 40px;
+}
+.explainAccountActivityModal-migrated #questionnare .title {
+  padding-bottom: 25px;
+}
+.explainAccountActivityModal-migrated #questionnare .question-area {
+  margin-bottom: 20px;
+}
+.explainAccountActivityModal-migrated #questionnare .question-area .question-area-label {
+  color: #424344;
+  margin-bottom: 5px;
+}
+.explainAccountActivityModal-migrated #questionnare .question-area textarea {
+  min-height: 100px;
+  padding-top: 20px;
+}
+.explainAccountActivityModal-migrated .error-component {
+  margin-left: 40px;
+}
+.explainAccountActivityModal-migrated .error-component .error-message {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.explainAccountActivityModal-migrated .upload-optional-text {
+  color: #424344;
+}
+.explainAccountActivityModal-migrated .uploadComponent-migrated {
+  margin-top: 20px;
+}
+/* Styling for React Modal */
+.removePayPalAsPaymentOption-Migrated .bodyText {
+  margin-bottom: 30px;
+}
+.removePayPalAsPaymentOption-Migrated .migratedWebsite {
+  padding-top: 21px;
+  margin-bottom: 15px;
+}
+.removePayPalAsPaymentOption-Migrated .moreDetails {
+  margin-top: 20px;
+}
+.shippingProofModal-migrated .shippingTransactions-component .transactionList {
+  margin: 30px 0 60px;
+  border-top: solid 1px #dcdcdc;
+}
+.shippingProofModal-migrated .shippingTransactions-component .transaction {
+  padding: 15px 0;
+  border-bottom: solid 1px #dcdcdc;
+  display: block;
+  text-align: left;
+}
+.shippingProofModal-migrated .shippingTransactions-component .transaction .content {
+  display: flex;
+  justify-content: space-between;
+}
+.shippingProofModal-migrated .shippingTransactions-component .transaction .content span {
+  align-self: center;
+}
+.shippingProofModal-migrated .shippingTransactions-component .transaction .icon-completed {
+  color: #00CF92;
+}
+.shippingProofModal-migrated .shippingTransactions-component div.transaction {
+  color: #2c2e2f;
+  pointer-events: none;
+}
+.shippingProofModal-migrated .shippingTransactions-component .error-component {
+  margin: 0 10px 0 5px;
+}
+.shippingProofModal-migrated .shippingTransactions-component .error-component .error-message {
+  margin: 0px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.shippingProofModal-migrated .shippingTransactions-component .error-component .content {
+  padding-left: 5px;
+  display: inline-block;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component .transaction-details {
+  margin: 25px 0;
+  padding: 0;
+  background: none;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component .transaction-details .txn-row {
+  padding-bottom: 10px;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component .proofFulfilmentOption {
+  margin: 40px 0 30px;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component legend {
+  border: none;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component .shippingTypeMenu,
+.shippingProofModal-migrated .shippingTransactionDetails-Component .shippingCarrierMenu {
+  margin-bottom: 20px;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component .checkboxTransaction,
+.shippingProofModal-migrated .shippingTransactionDetails-Component #otherCarrierName {
+  margin-top: 20px;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component .otherProof-wrapper .body-text {
+  margin-bottom: 30px;
+}
+.shippingProofModal-migrated .shippingTransactionDetails-Component .modalActions-component {
+  margin-top: 70px;
+}
+.shippingProofModal-migrated .modalActions-component button[disabled] {
+  opacity: .5;
+}
+.shippingProofModal-migrated .modalActions-component button[disabled]:hover,
+.shippingProofModal-migrated .modalActions-component button[disabled]:focus {
+  background-color: #0070ba;
+}
+.businessInfoModal-Migrated .info-text {
+  margin: 30px 0 15px;
+}
+.businessInfoModal-Migrated .text-input,
+.businessInfoModal-Migrated .dropdownList,
+.businessInfoModal-Migrated .textArea {
+  margin-bottom: 22px;
+}
+.securityInfo-Migrated .modal-component-content .form_element {
+  margin-top: 30px;
+}
+.securityInfo-Migrated .modal-component-content .form_element .field_margin {
+  margin-bottom: 25px;
+}
+.securityInfo-Migrated .modal-component-content .form_element .question_field_margin {
+  margin-bottom: 10px;
+}
+.securityInfo_CheckMark {
+  color: mediumseagreen;
+}
+.helperText_list_style {
+  list-style-type: none;
+}
+.secureDoneModal-Migrated {
+  margin-top: 25%;
+  text-align: center;
+}
+.secureDoneModal-Migrated .success_icon {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  color: mediumseagreen;
+}
+.secureDoneModal-Migrated .secure_heading {
+  color: #6C7378;
+  margin-bottom: 5px;
+}
+.explainActivitynModal-migrated .content_div {
+  margin-bottom: 30px;
+}
+.explainActivitynModal-migrated .CaptionTextStyle {
+  padding: 20px 0 10px 0;
+}
+.explainActivitynModal-migrated .BodyTextStyle {
+  margin: 30px 0 30px 0;
+}
+.explainActivitynModal-migrated .transactionList {
+  border-top: solid 1px #dcdcdc;
+}
+.explainActivitynModal-migrated .eaaSubmit #Submit_Button {
+  background-color: #b2d9ea;
+  border: none;
+}
+.explainActivitynModal-migrated .transactionApiFailed-footer {
+  text-align: center;
+  margin: 35px 0px;
+}
+.explainActivitynModal-migrated .error-component {
+  margin: 0 10px 0 5px;
+}
+.explainActivitynModal-migrated .error-component .error-message {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.explainActivitynModal-migrated .transaction {
+  padding: 15px 0;
+  border-bottom: solid 1px #dcdcdc;
+  display: block;
+  text-align: left;
+}
+.explainActivitynModal-migrated .transaction .content {
+  display: flex;
+  justify-content: space-between;
+}
+.explainActivitynModal-migrated .transaction .content span {
+  align-self: center;
+}
+.explainActivitynModal-migrated .transaction .icon-completed {
+  color: #00cf92;
+}
+.explainActivitynModal-migrated div.transaction {
+  color: #2c2e2f;
+  pointer-events: none;
+}
+.explainActivitynModal-migrated .transaction-details {
+  background-color: transparent;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.explainActivitynModal-migrated .transaction-details .margin10 {
+  margin-top: 10px;
+}
+.explainActivitynModal-migrated .tnx-row {
+  margin-bottom: 10px;
+}
+.explainActivitynModal-migrated .ul_style {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+.explainActivitynModal-migrated .ul_style .list_element_style {
+  list-style: disc;
+  color: #6c7378;
+}
+.explainActivitynModal-migrated .go-back {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+}
+@media (max-width: 64rem) {
+  .explainActivitynModal-migrated .go-back {
+    left: 24px;
+  }
+}
+@media (max-width: 47rem) {
+  .explainActivitynModal-migrated .go-back {
+    left: 16px;
+    top: 12px;
+  }
+}
+.explainActivitynModal-migrated .go-back span {
+  vertical-align: middle;
+}
+.explainActivitynModal-migrated .go-back span:last-child {
+  padding-left: 5px;
+}
+.explainActivitynModal-migrated .page-label a {
+  font-size: inherit;
+}
+.explainActivitynModal-migrated .form-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.explainActivitynModal-migrated .form-field .field-label {
+  margin-bottom: 10px;
+}
+.explainActivitynModal-migrated .uploadGuides {
+  margin: 2% 0 25px 10px;
+  padding-left: 10px;
+}
+.explainActivitynModal-migrated .uploadGuides li.body-text2 {
+  list-style: disc;
+  color: #6c7378;
+  padding-left: 5px;
+}
+.explainActivitynModal-migrated .radio-label .i-icon {
+  vertical-align: middle;
+  color: #0070ba;
+  cursor: pointer;
+}
+.explainActivitynModal-migrated .margintop10 {
+  margin-top: 10px;
+}
+.explainActivitynModal-migrated .extra-margin {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* Styling for React Modal */
+.invoiceProof-Migrated .transactionApiFailure {
+  text-align: center;
+  margin: 35px 0px;
+}
+.invoiceProof-Migrated .uploadGuides {
+  margin: 2% 0 25px 10px;
+  padding-left: 10px;
+}
+.invoiceProof-Migrated .uploadGuides li.body-text2 {
+  list-style: disc;
+  color: #6c7378;
+  padding-left: 5px;
+}
+.invoiceProof-Migrated .go-back {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+}
+@media (max-width: 64rem) {
+  .invoiceProof-Migrated .go-back {
+    left: 24px;
+  }
+}
+@media (max-width: 47rem) {
+  .invoiceProof-Migrated .go-back {
+    left: 16px;
+    top: 12px;
+  }
+}
+.invoiceProof-Migrated .go-back span {
+  vertical-align: middle;
+}
+.invoiceProof-Migrated .go-back span:last-child {
+  padding-left: 5px;
+}
+.invoiceProof-Migrated .transaction-details {
+  margin: 10px 0;
+  padding: 0;
+  background: none;
+}
+.invoiceProof-Migrated .transaction-details .tnx-row {
+  padding-bottom: 10px;
+}
+.invoiceProof-Migrated .transaction-details .margin10 {
+  margin-top: 10px;
+}
+.invoiceProof-Migrated .invoice-proof-options {
+  margin-bottom: 20px;
+}
+.invoiceProof-Migrated .invoice-proof-options legend {
+  border: none;
+}
+.invoiceProof-Migrated .supporting-file-section {
+  margin-top: 20px;
+}
+.invoiceProof-Migrated .privacy-text {
+  padding: 5px;
+  margin-top: 10px;
+}
+.relatedAccounts-migrated .content_div {
+  margin-bottom: 30px;
+}
+.relatedAccounts-migrated .CaptionTextStyle {
+  padding: 20px 0 10px 0;
+}
+.relatedAccounts-migrated .transactionApiFailed-footer {
+  text-align: center;
+  margin: 35px 0px;
+}
+.relatedAccounts-migrated .error-component {
+  margin: 0 10px 0 5px;
+}
+.relatedAccounts-migrated .error-component .error-message {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.relatedAccounts-migrated .account-details {
+  background-color: transparent;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.relatedAccounts-migrated .acc-row {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.relatedAccounts-migrated .ul_style {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+.relatedAccounts-migrated .ul_style .list_element_style {
+  list-style: disc;
+  color: #6c7378;
+}
+.relatedAccounts-migrated .accountResolved,
+.relatedAccounts-migrated .whyaccountNotResolved {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.relatedAccounts-migrated .accountResolved legend,
+.relatedAccounts-migrated .whyaccountNotResolved legend {
+  border-bottom: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.relatedAccounts-migrated .modalActions-component button[disabled] {
+  opacity: .5;
+  border: none;
+  background-color: #b2d9ea;
+}
+.regulatoryInfo-Migrated .modal-component-content .regulatoryInfo-form {
+  margin-top: 30px;
+}
+.regulatoryInfo-Migrated .modal-component-content .regulatoryInfo-form .regulatoryInfoDesc {
+  margin-bottom: 24px;
+}
+.regulatoryInfo-Migrated .modal-component-content .regulatoryInfo-form .error-message {
+  margin-left: -21px;
+}
+.regulatoryInfo-Migrated .modal-component-content .regulatoryInfo-form .errorList-component {
+  margin-bottom: 24px;
+}
+.regulatoryInfo-Migrated .modal-component-content .regulatoryInfo-form .regulatory-inputLabel {
+  margin-bottom: 10px;
+}
+.regulatoryInfo-Migrated .modal-component-content .regulatoryInfo-form .textArea_Field {
+  margin-bottom: 25px;
+}
+.resolveAppealList-component .appealList {
+  margin-top: 30px;
+}
+.resolveAppealList-component .appealList .appealItemDetails {
+  text-align: left;
+}
+.resolveAppealList-component .appealList .appealItemDetails .content {
+  display: flex;
+  justify-content: space-between;
+}
+.resolveAppealList-component .appealList .appealItemDetails .content span {
+  align-self: center;
+}
+.resolveAppealList-component .appealList .appealItemDetails .icon-completed {
+  color: #00CF92;
+}
+.resolveAppealList-component .appealList div.appealItemDetails {
+  color: #2c2e2f;
+  pointer-events: none;
+}
+.resolveAppealList-component .modalActions-component button[disabled] {
+  opacity: .5;
+  background-color: #b2d9ea;
+  border: none;
+  pointer-events: none;
+}
+.acceptablePolicyAffidavit-Migrated .iAgreeText {
+  margin-top: 20px;
+}
+.paymentReversalReasonModal-migrated .transaction-details {
+  background-color: transparent;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.paymentReversalReasonModal-migrated .transaction-details .tnx-row {
+  margin-bottom: 10px;
+}
+.paymentReversalReasonModal-migrated .transaction-details .margin10 {
+  margin-top: 10px;
+}
+.paymentReversalReasonModal-migrated .form-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.paymentReversalReasonModal-migrated .form-field .field-label {
+  margin-bottom: 10px;
+}
+.paymentReversalReasonModal-migrated .form-field .additional-margin {
+  margin-top: 30px;
+}
+.provideInfoOnCryptoTransactions .content_div {
+  margin-bottom: 30px;
+}
+.provideInfoOnCryptoTransactions .CaptionTextStyle {
+  padding: 20px 0 10px 0;
+}
+.provideInfoOnCryptoTransactions .BodyTextStyle {
+  margin: 30px 0 30px 0;
+}
+.provideInfoOnCryptoTransactions .transactionApiFailure {
+  text-align: center;
+  margin: 35px 0px;
+}
+.provideInfoOnCryptoTransactions .error-component {
+  margin: 0 10px 0 5px;
+}
+.provideInfoOnCryptoTransactions .error-component .error-message {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.provideInfoOnCryptoTransactions .crypto-transaction-details {
+  background-color: transparent;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+.provideInfoOnCryptoTransactions .crypto-transaction-details .margin10 {
+  margin-top: 10px;
+}
+.provideInfoOnCryptoTransactions .tnx-row {
+  margin-bottom: 10px;
+}
+.provideInfoOnCryptoTransactions .tnx-detail-value {
+  position: absolute;
+  bottom: 0;
+}
+.provideInfoOnCryptoTransactions .go-back {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  z-index: 1;
+}
+@media (max-width: 64rem) {
+  .provideInfoOnCryptoTransactions .go-back {
+    left: 24px;
+  }
+}
+@media (max-width: 47rem) {
+  .provideInfoOnCryptoTransactions .go-back {
+    left: 16px;
+    top: 12px;
+  }
+}
+.provideInfoOnCryptoTransactions .go-back span {
+  vertical-align: middle;
+}
+.provideInfoOnCryptoTransactions .go-back span:last-child {
+  padding-left: 5px;
+}
+.provideInfoOnCryptoTransactions .page-label a {
+  font-size: inherit;
+}
+.provideInfoOnCryptoTransactions .form-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.provideInfoOnCryptoTransactions .form-field .field-label {
+  margin-bottom: 10px;
+}
+.provideInfoOnCryptoTransactions .uploadGuides {
+  margin: 2% 0 25px 10px;
+  padding-left: 10px;
+}
+.provideInfoOnCryptoTransactions .uploadGuides li {
+  list-style: disc;
+  color: #6c7378;
+  padding-left: 5px;
+}
+.provideInfoOnCryptoTransactions .radio-label .i-icon {
+  vertical-align: middle;
+  color: #0070ba;
+  cursor: pointer;
+}
+.provideInfoOnCryptoTransactions .extra-margin {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+html[dir="rtl"] .proofIdModal-Migrated .header_style,
+html[dir="rtl"] .proofIdModal-Migrated .body_style,
+html[dir="rtl"] .proofIdModal-Migrated .list_element_style {
+  text-align: right;
+}
+html[dir="rtl"] .proofIdModal-Migrated .file-format {
+  float: left;
+}
+html[dir="rtl"] .proofIdModal-Migrated .ul_style {
+  margin-left: 0px;
+  margin-right: 16px;
+}
+html[dir="rtl"] .reviewLegalOrdersModal-Migrated .content_data {
+  margin-right: -36px;
+}
+html[dir="rtl"] .reviewLegalOrdersModal-Migrated .row-style {
+  text-align: right;
+}
+html[dir="rtl"] .reimburseChargebackModal-Migrated .heading,
+html[dir="rtl"] .reimburseChargebackModal-Migrated .desc-reimburse {
+  text-align: right;
+}
+html[dir="rtl"] .reimburseChargebackModal-Migrated .reimburseChargeback-content .steps-reimburse-ul {
+  padding: 0px 25px 0px 0px;
+}
+html[dir="rtl"] .reimburseChargebackModal-Migrated .reimburseChargeback-content .steps-reimburse-ul .steps-reimburse-li {
+  padding: 0px 5px 0px 0px;
+  text-align: right;
+}
+html[dir="rtl"] .reimburseChargebackModal-Migrated .reimburseChargeback-content .address-reimburse-ul .address-reimburse-li {
+  padding: 0px 35px 0px 0px;
+}
+html[dir="rtl"] .reimburseChargebackModal-Migrated .reimburseChargeback-content .address-reimburse-ul .address-reimburse-li#address-bold {
+  padding-left: 0px;
+  margin-top: 30px;
+}
+html[dir="rtl"] .politicallyExposedPeople-Migrated .political-criteria-list {
+  text-align: right;
+}
+html[dir="rtl"] .secureDoneModal-Migrated .success_icon,
+html[dir="rtl"] .secureDoneModal-Migrated .secure_heading,
+html[dir="rtl"] .secureDoneModal-Migrated p {
+  margin-right: 50px;
+}
+html[dir="rtl"] .errorList-component.error-list p {
+  text-align: right;
+}
+html[dir="rtl"] .uploadComponent-migrated .trashIcon {
+  float: left;
+}
+html[dir="rtl"] .uploadComponent-migrated .file-format {
+  float: left;
+}
+html[dir="rtl"] .appeal-step-migrated-wrapper .appealstep-migrated .appealStep-status {
+  text-align: left;
+}
+html[dir="rtl"] .textInputCounter-component .downCounter {
+  text-align: left;
+}
+html[dir="rtl"] .react_migrated_modal_wrapper .react_migrated_modal .heading,
+html[dir="rtl"] .react_migrated_modal_wrapper .react_migrated_modal .body-text {
+  text-align: right;
+}
+html[dir="rtl"] .alcoholAddendum-Migrated .body-text ul {
+  padding-right: 15px;
+}
+html[dir="rtl"] .explainAccountActivityModal-migrated .go-back {
+  left: auto;
+  right: 30px;
+}
+@media (max-width: 64rem) {
+  html[dir="rtl"] .explainAccountActivityModal-migrated .go-back {
+    right: 24px;
+  }
+}
+@media (max-width: 47rem) {
+  html[dir="rtl"] .explainAccountActivityModal-migrated .go-back {
+    right: 16px;
+  }
+}
+html[dir="rtl"] .explainAccountActivityModal-migrated .uploadGuides {
+  margin-right: 15px;
+}
+html[dir="rtl"] .explainAccountActivityModal-migrated .uploadGuides li.body-text2 {
+  text-align: right;
+}
+html[dir="rtl"] .invoiceProof-Migrated .go-back {
+  left: auto;
+  right: 30px;
+}
+@media (max-width: 64rem) {
+  html[dir="rtl"] .invoiceProof-Migrated .go-back {
+    right: 24px;
+  }
+}
+@media (max-width: 47rem) {
+  html[dir="rtl"] .invoiceProof-Migrated .go-back {
+    right: 16px;
+  }
+}
+html[dir="rtl"] .invoiceProof-Migrated .uploadGuides {
+  margin-right: 15px;
+}
+html[dir="rtl"] .invoiceProof-Migrated .uploadGuides li.body-text2 {
+  padding-left: 0px;
+  padding-right: 5px;
+}
+html[dir="rtl"] .explainActivitynModal-migrated .go-back {
+  left: auto;
+  right: 30px;
+}
+@media (max-width: 64rem) {
+  html[dir="rtl"] .explainActivitynModal-migrated .go-back {
+    right: 24px;
+  }
+}
+@media (max-width: 47rem) {
+  html[dir="rtl"] .explainActivitynModal-migrated .go-back {
+    right: 16px;
+  }
+}
+html[dir="rtl"] .errorList-component .nonAlert-container p {
+  text-align: right;
+}
+html[dir="rtl"] .regulatoryInfo-Migrated .rejectionErrorMsg {
+  margin-right: -21px;
+}
+html[dir="rtl"] .resolveAppealList-component .appealItemDetails {
+  text-align: right;
+}
+.progressBar-Component .progress-meter {
+  padding: 0;
+}
+.native-web-view .disable-in-web-view,
+.native-web-view .disable-in-web-view a {
+  pointer-events: none;
+  color: inherit;
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+}
+.native-web-view .disable-in-web-view a:focus,
+.native-web-view .disable-in-web-view a:hover {
+  text-decoration: none;
+  outline: none;
+}
+.native-web-view .link-ext-icon {
+  display: none;
+}
+.native-web-view .noAppeals-Migrated a {
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+}
+.native-web-view .react_migrated_modal_wrapper [class*="ppvx_modal-header__close"] {
+  display: none;
+}
+.native-web-view .react_migrated_modal_wrapper .disable-in-web-view a {
+  font-family: "PayPalSansBig-Regular", Helvetica Neue, Arial, sans-serif;
+}
+.native-web-view .react_migrated_modal_wrapper .disable-in-web-view a:focus,
+.native-web-view .react_migrated_modal_wrapper .disable-in-web-view a:hover {
+  text-decoration: none;
+  outline: none;
+}
+@media (max-width: 1024px) {
+  .native-web-view .react_migrated_modal_wrapper {
+    max-height: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+    position: fixed !important;
+  }
+  .native-web-view .react_migrated_modal_wrapper .react_migrated_modal {
+    padding-bottom: 80px !important;
+  }
+}
+html[dir="rtl"] .dashboard-component .dashboard-row {
+  flex-flow: row-reverse wrap;
+}
+html[dir="rtl"] .limitationDetails-component .referenceCaseId {
+  background-color: yellow;
+}
+html[dir="rtl"] .limitationDetails-component .get-help {
+  float: left;
+}
